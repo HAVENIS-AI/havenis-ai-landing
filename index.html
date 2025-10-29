@@ -1,30 +1,302 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAVENIS-AI: Privacy-First RF-Sensing for HNWIs | €150k ARR Year 1</title>
-    <meta name="description" content="B2B2C GTM Strategy: IP-Protected Sensing Tech. Seed-Ready: Pilots, NPS 8.5, Crestron LOI." />
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background: #0f172a;
-        color: #e2e8f0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      #root {
-        min-height: 100vh;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom: 1px solid #334155;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #00d9ff;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            margin-left: 30px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            color: #00d9ff;
+            font-size: 0.9rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .highlight {
+            color: #00d9ff;
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 30px auto 40px;
+            color: #cbd5e1;
+        }
+
+        button {
+            background: #00d9ff;
+            color: #0f172a;
+            padding: 15px 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #ffffff;
+            transform: scale(1.05);
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .card h4 {
+            font-size: 1.3rem;
+            color: #00d9ff;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .metric-card {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 3rem;
+            color: #00d9ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            color: #cbd5e1;
+        }
+
+        /* Dark Section */
+        .dark-bg {
+            background: rgba(30, 41, 59, 0.5);
+            margin-top: 40px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            border-top: 1px solid #334155;
+            padding: 40px 20px;
+            text-align: center;
+            color: #94a3b8;
+            margin-top: 80px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .content-area {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
     </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/havenis-ai-landing/src/main.tsx"></script>
-  </body>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">HAVENIS<span>-AI</span></div>
+            <nav>
+                <a href="#metrics">Metrics</a>
+                <a href="#why">Why Us</a>
+                <a href="#team">Team</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">Go-to-Market Strategy v2.5</div>
+        <h1>High-Margin, Low-Volume</h1>
+        <p class="highlight">€150k ARR in Year 1</p>
+        <p>B2B2C für HNWIs: IP-geschütztes Sensing (Patent Pending) via Partner & Events – Privacy-First. 80% Interest from 15 Interviews.</p>
+        <button onclick="alert('Request Full Deck - Coming Soon!')">Request Full Deck (NDA)</button>
+    </section>
+
+    <!-- Key Metrics -->
+    <section id="metrics" class="dark-bg">
+        <div class="content-area">
+            <h3>Key Metrics</h3>
+            <div class="grid">
+                <div class="card metric-card">
+                    <div class="metric-value">€150k</div>
+                    <div class="metric-label">ARR Target (Year 1)</div>
+                </div>
+                <div class="card metric-card">
+                    <div class="metric-value">80%</div>
+                    <div class="metric-label">Market Interest</div>
+                </div>
+                <div class="card metric-card">
+                    <div class="metric-value">8.5</div>
+                    <div class="metric-label">Pilot NPS Score</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why HAVENIS-AI -->
+    <section id="why">
+        <h3>Why HAVENIS-AI</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>🔒 Privacy-First RF-Sensing</h4>
+                <p>Non-invasive, IP-protected sensing technology. Patent pending. Zero video surveillance - pure RF-based detection.</p>
+            </div>
+            <div class="card">
+                <h4>🤝 B2B2C Strategy</h4>
+                <p>Direct HNWI sales via events + Partner integration (Crestron LOI signed). Diversified revenue streams, 40% net margin.</p>
+            </div>
+            <div class="card">
+                <h4>✓ Proven Traction</h4>
+                <p>10 pilot installations, 8.5 NPS, 80% HNWI interest. Scaling to 30 installations by Q4 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="dark-bg">
+        <div class="content-area">
+            <h3>Leadership Team</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Danilo Kuss</h4>
+                    <p style="color: #00d9ff; margin-bottom: 10px;">CEO & Founder</p>
+                    <p>PhD Elektrotechnik (TU Berlin), 8 Jahre RF-Sensing bei Siemens Labs. Track: Led 5 IoT Pilots, €2M Revenue Generated.</p>
+                </div>
+                <div class="card">
+                    <h4>Elias Kern</h4>
+                    <p style="color: #00d9ff; margin-bottom: 10px;">CTO</p>
+                    <p>MSc Computer Science (ETH Zurich), 6 Jahre IP/Tech bei Bosch. Track: 3 Patente in Sensing Tech.</p>
+                </div>
+                <div class="card">
+                    <h4>Sarah Le Roux</h4>
+                    <p style="color: #00d9ff; margin-bottom: 10px;">COO</p>
+                    <p>MBA (INSEAD), 10 Jahre Sales Ops bei Honeywell. Track: Scaled B2B2C Channels to €10M ARR.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="hero" style="text-align: center;">
+        <h2>Ready to Learn More?</h2>
+        <p style="font-size: 1.1rem; color: #cbd5e1; margin-bottom: 30px;">Request the full deck under NDA to explore partnership opportunities.</p>
+        <button onclick="alert('Request Full Deck - Coming Soon!')">Request Full Deck (NDA)</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 HAVENIS-AI GmbH. All rights reserved.</p>
+        <p style="font-size: 0.9rem; margin-top: 10px;">Confidential - NDA Required</p>
+    </footer>
+</body>
 </html>
