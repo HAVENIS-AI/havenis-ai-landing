@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAVENIS-AI: Privacy-First RF-Sensing für HNWIs | €150k ARR Jahr 1</title>
+    <meta name="description" content="B2B2C GTM Strategie: IP-geschütztes Sensing (Patent Pending) via Partner & Events – Privacy-First. 80% Interesse von 15 Interviews.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #0f172a;
+            border-bottom: 1px solid #334155;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        h1 span {
+            color: #00d9ff;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .badge p {
+            color: #00d9ff;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero .subtitle {
+            font-size: 2.5rem;
+            color: #00d9ff;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #cbd5e1;
+        }
+
+        button {
+            background: #00d9ff;
+            color: #0f172a;
+            padding: 15px 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .metric-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .metric-card p:first-child {
+            font-size: 3rem;
+            color: #00d9ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .metric-card p:last-child {
+            color: #cbd5e1;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        section:nth-child(even) {
+            background: rgba(30, 41, 59, 0.5);
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .card h4 {
+            font-size: 1.3rem;
+            color: #00d9ff;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .team-member {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .team-member .name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .team-member .role {
+            color: #00d9ff;
+            margin-bottom: 15px;
+        }
+
+        .team-member .bio {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 80px 20px;
+            margin-top: 60px;
+        }
+
+        .cta-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background: #0f172a;
+            border-top: 1px solid #334155;
+            padding: 40px 20px;
+            text-align: center;
+            color: #94a3b8;
+            margin-top: 80px;
+        }
+
+        footer p:last-child {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HAVENIS<span>-AI</span></h1>
+            <nav>
+                <a href="#market">Markt</a>
+                <a href="#team">Team</a>
+                <a href="#action">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="badge">
+                    <p>Go-to-Market Strategy v2.5 (90% VC-Ready)</p>
+                </div>
+                <h2>High-Margin, Low-Volume</h2>
+                <div class="subtitle">€150k ARR in Jahr 1</div>
+                <div class="description">
+                    B2B2C für HNWIs: IP-geschütztes Sensing (Patent Pending) via Partner & Events – Privacy-First. 80% Interesse von 15 Interviews.
+                </div>
+                <button onclick="alert('Bitte kontaktieren Sie uns unter HAVENIS-AI@web.de')">NDA Deck anfordern</button>
+            </div>
+        </section>
+
+        <section id="market">
+            <div class="container">
+                <div class="metrics">
+                    <div class="metric-card">
+                        <p>€150k</p>
+                        <p>ARR Ziel (Jahr 1)</p>
+                    </div>
+                    <div class="metric-card">
+                        <p>80%</p>
+                        <p>Marktinteresse</p>
+                    </div>
+                    <div class="metric-card">
+                        <p>8.5</p>
+                        <p>Pilot NPS Score</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h3>Warum HAVENIS-AI</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h4>🔒 Privacy-First RF-Sensing</h4>
+                        <p>Nicht-invasive, IP-geschützte Sensing-Technologie. Patent Pending. Keine Video-Überwachung.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🤝 B2B2C Strategie</h4>
+                        <p>Direkte HNWI-Verkäufe + Partner-Integration (Crestron LOI unterzeichnet). Diversifizierte Einnahmen.</p>
+                    </div>
+                    <div class="card">
+                        <h4>✓ Bewährter Track Record</h4>
+                        <p>10 Pilot-Installationen, 8.5 NPS, 80% HNWI-Interesse. Skalierung auf 30 bis Q4.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <h3>Leadership Team</h3>
+                <div class="cards">
+                    <div class="team-member">
+                        <div class="name">Danilo Kuss</div>
+                        <div class="role">CEO & Founder</div>
+                        <div class="bio">PhD Elektrotechnik (TU Berlin), 8 Jahre RF-Sensing bei Siemens Labs. Track: 5 IoT Pilots, €2M Revenue</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="name">Elias Kern</div>
+                        <div class="role">CTO</div>
+                        <div class="bio">MSc Computer Science (ETH Zurich), 6 Jahre IP/Tech bei Bosch. Track: 3 Patente in Sensing Tech</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="name">Sarah Le Roux</div>
+                        <div class="role">COO</div>
+                        <div class="bio">MBA (INSEAD), 10 Jahre Sales Ops bei Honeywell. Track: Scaled B2B2C zu €10M ARR</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="action">
+            <div class="container">
+                <h3>Bereit für mehr Informationen?</h3>
+                <p>Fordern Sie das vollständige Deck unter NDA an, um Partnerschaftsmöglichkeiten zu erkunden.</p>
+                <button onclick="window.location.href='mailto:HAVENIS-AI@web.de?subject=NDA Deck Anfrage&body=Hallo,%0A%0Aich bin interessiert an dem HAVENIS-AI NDA Deck.%0A%0AViele Grüße'">NDA Deck anfordern</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 HAVENIS-AI GmbH. Alle Rechte vorbehalten.</p>
+        <p>Vertraulich - NDA erforderlich</p>
+    </footer>
+</body>
+</html>
