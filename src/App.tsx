@@ -1,111 +1,44 @@
-import React from 'react'
-
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-lg border-b border-slate-700">
-        <nav className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            <div className="flex-shrink-0">
-              <span className="text-2xl font-bold text-white">
-                HAVENIS<span className="text-cyan-400">-AI</span>
-              </span>
-            </div>
-          </div>
-        </nav>
+    <div style={{ minHeight: '100vh', background: '#0f172a', color: '#e2e8f0', padding: '40px 20px' }}>
+      <header style={{ marginBottom: '40px' }}>
+        <h1 style={{ fontSize: '2rem', marginBottom: '10px' }}>
+          HAVENIS<span style={{ color: '#00d9ff' }}>-AI</span>
+        </h1>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-            High-Margin, Low-Volume
-          </h1>
-          <p className="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">
-            €150k ARR in Year 1
-          </p>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+      <main>
+        <section style={{ marginBottom: '40px' }}>
+          <h2 style={{ fontSize: '3rem', marginBottom: '20px' }}>High-Margin, Low-Volume</h2>
+          <p style={{ fontSize: '2rem', color: '#00d9ff', marginBottom: '20px' }}>€150k ARR in Year 1</p>
+          <p style={{ fontSize: '1.1rem', maxWidth: '600px' }}>
             B2B2C für HNWIs: IP-geschütztes Sensing (Patent Pending) via Partner & Events – Privacy-First. 80% Interest from 15 Interviews.
           </p>
+        </section>
 
-          {/* Status Badge */}
-          <div className="inline-block bg-cyan-400/20 border border-cyan-400/50 px-6 py-3 rounded-lg mb-8">
-            <p className="text-cyan-300 font-semibold">
-              ✓ Deployment Successful - Landing Page Live
-            </p>
+        <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '40px' }}>
+          <div style={{ border: '1px solid #334155', borderRadius: '8px', padding: '20px', background: '#1e293b' }}>
+            <p style={{ fontSize: '2rem', color: '#00d9ff', marginBottom: '10px' }}>€150k</p>
+            <p>ARR Target (Year 1)</p>
           </div>
-
-          {/* Key Metrics */}
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-              <p className="text-4xl font-bold text-cyan-400">€150k</p>
-              <p className="text-gray-300 mt-2">ARR Target (Year 1)</p>
-            </div>
-            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-              <p className="text-4xl font-bold text-cyan-400">80%</p>
-              <p className="text-gray-300 mt-2">Market Interest</p>
-            </div>
-            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-              <p className="text-4xl font-bold text-cyan-400">8.5</p>
-              <p className="text-gray-300 mt-2">Pilot NPS Score</p>
-            </div>
+          <div style={{ border: '1px solid #334155', borderRadius: '8px', padding: '20px', background: '#1e293b' }}>
+            <p style={{ fontSize: '2rem', color: '#00d9ff', marginBottom: '10px' }}>80%</p>
+            <p>Market Interest</p>
           </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Why HAVENIS-AI</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-slate-900 border border-slate-700 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-cyan-400 mb-4">Privacy-First RF-Sensing</h3>
-              <p className="text-gray-300">
-                Non-invasive, IP-protected sensing technology. Patent pending. Zero video surveillance - pure RF-based detection.
-              </p>
-            </div>
-            <div className="bg-slate-900 border border-slate-700 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-cyan-400 mb-4">B2B2C Go-to-Market</h3>
-              <p className="text-gray-300">
-                Direct HNWI sales via events + Partner integration (Crestron LOI signed). Diversified revenue streams, 40% net margin.
-              </p>
-            </div>
-            <div className="bg-slate-900 border border-slate-700 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-cyan-400 mb-4">Proven Traction</h3>
-              <p className="text-gray-300">
-                10 pilot installations. 8.5 NPS. 80% of interviewed HNWIs expressed interest. Scaling to 30 installs by Q4.
-              </p>
-            </div>
-            <div className="bg-slate-900 border border-slate-700 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-cyan-400 mb-4">Experienced Team</h3>
-              <p className="text-gray-300">
-                CEO: 8 years RF-Sensing at Siemens. CTO: 6 years IP/Tech at Bosch. COO: 10 years Sales Ops at Honeywell.
-              </p>
-            </div>
+          <div style={{ border: '1px solid #334155', borderRadius: '8px', padding: '20px', background: '#1e293b' }}>
+            <p style={{ fontSize: '2rem', color: '#00d9ff', marginBottom: '10px' }}>8.5</p>
+            <p>Pilot NPS Score</p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Learn More?</h2>
-          <p className="text-gray-300 mb-8 text-lg">
-            Request the full deck under NDA to explore partnership opportunities.
-          </p>
-          <button className="bg-cyan-400 text-slate-900 font-bold py-4 px-8 rounded-lg text-lg hover:bg-white transition-all">
-            Request Full Deck (NDA)
-          </button>
-        </div>
-      </section>
+        <section style={{ background: '#1e293b', padding: '30px', borderRadius: '8px', marginBottom: '40px' }}>
+          <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>✓ Deployment Successful</h3>
+          <p>HAVENIS-AI landing page is now live on Vercel.</p>
+        </section>
+      </main>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 border-t border-slate-700 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <p>© 2025 HAVENIS-AI GmbH. All rights reserved.</p>
-          <p className="text-sm mt-2">Confidential - NDA Required</p>
-        </div>
+      <footer style={{ borderTop: '1px solid #334155', paddingTop: '20px', textAlign: 'center', color: '#94a3b8' }}>
+        <p>© 2025 HAVENIS-AI GmbH. All rights reserved.</p>
       </footer>
     </div>
   )
